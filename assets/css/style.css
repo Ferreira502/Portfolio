@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    display: flex;
+    justify-content: flex-end; 
+    position: fixed;
+    width: 100%;    
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.nav-menu a {
+    display: flex;
+    padding: 50px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Apresentacao meu nome  */
+
+.title-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #0a0a0a;
+}
+
+.title {
+    text-align: center;
+    color: white;
+}
+
+.nome {
+    font-size: 100px;
+    margin-bottom: 10px;
+}
+
+.title h2 {
+    font-size: 60px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    padding: 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Quicksand", sans-serif;
+}
+
+.title h4 {
+    font-size: 25px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    color: #999;
+    font-family: "Quicksand", sans-serif;
+}
+
+.sobre-botao {
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin: 5px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Sobre Mim */
+
