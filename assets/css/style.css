@@ -33,6 +33,8 @@ header {
     align-items: center;
     min-height: 100vh;
     background-color: #0a0a0a;
+    justify-content: space-between; 
+    padding: 80px;
 }
 
 .title {
@@ -54,6 +56,7 @@ header {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: "Quicksand", sans-serif;
+    background-color: #0a0a0a;
 }
 
 .title h4 {
@@ -74,4 +77,3 @@ header {
 }
 
 /* Sobre Mim */
-
