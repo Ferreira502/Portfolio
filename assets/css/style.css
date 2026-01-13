@@ -1,6 +1,7 @@
 /* 
    RESET
  */
+
 * {
     margin: 0;
     padding: 0;
@@ -18,10 +19,10 @@ body {
     line-height: 1.6;
 }
 
-
 /* 
    HEADER / NAVBAR
  */
+
 header {
     position: fixed;
     top: 0;
@@ -86,10 +87,10 @@ header {
     border-color: #a78bfa;
 }
 
-
 /* 
    APRESENTACAO
  */
+
 .title-1 {
     min-height: 100vh;
     display: flex;
@@ -132,10 +133,10 @@ header {
     margin: 0 auto 35px;
 }
 
-
 /* 
    BOTOES
  */
+
 .botoes {
     margin-top: 10px;
 }
@@ -160,10 +161,10 @@ header {
     transform: translateY(-2px);
 }
 
-
 /* 
    SOBRE
  */
+
 .sobre-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -196,10 +197,10 @@ header {
     text-align: left;
 }
 
-
 /* 
    BOTOES SOCIAIS
  */
+
 .social-botoes {
     margin-top: 35px;
     display: flex;
@@ -227,10 +228,10 @@ header {
     border-color: transparent;
 }
 
-
 /* 
    TECNOLOGIAS
  */
+
 .section {
     padding: 110px 10%;
     text-align: center;
@@ -261,10 +262,10 @@ header {
     color: #d1d1d1;
 }
 
-
 /* 
    CARDS
  */
+ 
 .grid {
     max-width: 1200px;
     margin: 0 auto;
@@ -319,6 +320,7 @@ header {
 /* 
    PROJETOS
  */
+
 .projeto-card {
     display: flex;
     flex-direction: column;
@@ -373,10 +375,10 @@ header {
     color: #ffffff;
 }
 
-
 /* 
    FOOTER
  */
+
 footer {
     padding: 35px;
     text-align: center;
@@ -384,10 +386,10 @@ footer {
     color: #888;
 }
 
-
 /* 
    RESPONSIVO
  */
+
 @media (max-width: 900px) {
     .sobre-container {
         grid-template-columns: 1fr;
