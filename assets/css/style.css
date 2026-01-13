@@ -1,6 +1,6 @@
-/* =====================
-   RESET & BASE
-===================== */
+/* 
+   RESET
+ */
 * {
     margin: 0;
     padding: 0;
@@ -18,9 +18,10 @@ body {
     line-height: 1.6;
 }
 
-/* =====================
+
+/* 
    HEADER / NAVBAR
-===================== */
+ */
 header {
     position: fixed;
     top: 0;
@@ -36,6 +37,7 @@ header {
     padding: 20px 40px;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     gap: 30px;
 }
 
@@ -51,7 +53,7 @@ header {
 .nav-menu a::after {
     content: "";
     position: absolute;
-    width: 0%;
+    width: 0;
     height: 2px;
     left: 0;
     bottom: -6px;
@@ -85,9 +87,9 @@ header {
 }
 
 
-/* =====================
-   HERO
-===================== */
+/* 
+   APRESENTACAO
+ */
 .title-1 {
     min-height: 100vh;
     display: flex;
@@ -130,23 +132,24 @@ header {
     margin: 0 auto 35px;
 }
 
-/* =====================
-   BOTÕES
-===================== */
+
+/* 
+   BOTOES
+ */
 .botoes {
     margin-top: 10px;
 }
 
-.sobre-botao {
+.sobre-botao,
+.social-btn {
     display: inline-block;
-    padding: 14px 34px;
-    margin: 5px;
+    padding: 12px 30px;
     border-radius: 50px;
     text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
     color: #ffffff;
-    font-size: 16px;
-    font-weight: 500;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255,255,255,0.3);
     transition: all 0.3s ease;
 }
 
@@ -158,19 +161,18 @@ header {
 }
 
 
-/* =====================
-   SOBRE - FOTO + TEXTO
-===================== */
+/* 
+   SOBRE
+ */
 .sobre-container {
+    max-width: 1200px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     gap: 50px;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
-/* FOTO */
 .sobre-foto {
     display: flex;
     justify-content: center;
@@ -180,8 +182,8 @@ header {
     width: 100%;
     max-width: 320px;
     height: 500px;
-    border-radius: 20px;
     object-fit: cover;
+    border-radius: 20px;
     box-shadow: 0 15px 40px rgba(167, 139, 250, 0.25);
     transition: transform 0.3s ease;
 }
@@ -190,27 +192,14 @@ header {
     transform: scale(1.03);
 }
 
-/* TEXTO */
 .sobre-texto {
     text-align: left;
 }
 
-/* RESPONSIVO */
-@media (max-width: 900px) {
-    .sobre-container {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
 
-    .sobre-texto {
-        text-align: center;
-    }
-}
-
-
-/* =====================
-   BOTÕES SOCIAIS - SOBRE
-===================== */
+/* 
+   BOTOES SOCIAIS
+ */
 .social-botoes {
     margin-top: 35px;
     display: flex;
@@ -219,51 +208,36 @@ header {
     gap: 15px;
 }
 
-.social-btn {
-    padding: 12px 28px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: 600;
-    color: #ffffff;
-    border: 1px solid rgba(255,255,255,0.3);
-    transition: all 0.3s ease;
+.social-btn:hover {
+    transform: translateY(-3px);
 }
 
-/* GitHub */
 .social-btn.github:hover {
     background-color: #24292e;
     border-color: #24292e;
 }
 
-/* LinkedIn */
 .social-btn.linkedin:hover {
     background-color: #0a66c2;
     border-color: #0a66c2;
 }
 
-/* Instagram */
 .social-btn.instagram:hover {
     background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
     border-color: transparent;
 }
 
-/* Hover geral */
-.social-btn:hover {
-    transform: translateY(-3px);
-}
 
-
-/* =====================
-   SEÇÕES
-===================== */
+/* 
+   TECNOLOGIAS
+ */
 .section {
     padding: 110px 10%;
     text-align: center;
 }
 
 .section.dark {
-    background-color: #111111;
+    background-color: #111;
 }
 
 .tag {
@@ -280,9 +254,6 @@ header {
     margin-bottom: 40px;
 }
 
-/* =====================
-   TEXTOS
-===================== */
 .texto {
     max-width: 850px;
     margin: 0 auto 25px;
@@ -290,25 +261,18 @@ header {
     color: #d1d1d1;
 }
 
-.section h3 {
-    font-size: 22px;
-    margin-bottom: 10px;
-}
 
-/* =====================
-   GRID
-===================== */
+/* 
+   CARDS
+ */
 .grid {
+    max-width: 1200px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 25px;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
-/* =====================
-   CARD
-===================== */
 .card {
     background: linear-gradient(145deg, #1a1a1a, #131313);
     padding: 30px;
@@ -317,42 +281,27 @@ header {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card h3 {
-    color: #ffffff;
-    margin-bottom: 10px;
-}
-
-.card p {
-    color: #c9c9c9;
-    font-size: 16px;
-}
-
-.card strong {
-    color: #ffffff;
-}
-
 .card:hover {
     transform: translateY(-8px);
     box-shadow: 0 10px 30px rgba(167, 139, 250, 0.15);
 }
 
-
-/* =====================
-   SERVIÇOS
-===================== */
-.servicos-grid {
-    align-items: stretch;
+.card h3 {
+    margin-bottom: 10px;
 }
 
-.servico-card {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    text-align: left;
+.card p {
+    font-size: 16px;
+    color: #c9c9c9;
 }
+
+/* 
+    ICONES 
+ */
 
 .servico-icon {
-    font-size: 34px;
+    font-size: 36px;
+    color: #a78bfa;
 }
 
 .servico-card ul {
@@ -361,82 +310,23 @@ header {
 }
 
 .servico-card ul li {
-    font-size: 15px;
-    color: #cfcfcf;
-    margin-bottom: 6px;
     list-style: disc;
+    color: #cfcfcf;
+    font-size: 15px;
+    margin-bottom: 6px;
 }
 
-/* =====================
+/* 
    PROJETOS
-===================== */
-.projetos-grid {
-    align-items: stretch;
-}
-
+ */
 .projeto-card {
     display: flex;
     flex-direction: column;
     gap: 15px;
-}
-
-.projeto-descricao {
-    font-size: 16px;
-    color: #cfcfcf;
-}
-
-/* TAGS */
-.projeto-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 5px;
-}
-
-.projeto-tags span {
-    font-size: 13px;
-    padding: 6px 14px;
-    border-radius: 20px;
-    background-color: rgba(167, 139, 250, 0.15);
-    color: #a78bfa;
-}
-
-/* LINKS */
-.projeto-links {
-    margin-top: auto;
-    display: flex;
-    gap: 20px;
-}
-
-.projeto-links a {
-    text-decoration: none;
-    font-weight: 600;
-    color: #a78bfa;
-    transition: color 0.3s;
-}
-
-.projeto-links a:hover {
-    color: #ffffff;
-}
-
-.projeto-card h3 {
-    font-size: 20px;
-}
-
-.projeto-descricao {
-    line-height: 1.5;
-}
-
-.projeto-card {
     min-height: 420px;
 }
 
-
-/* =====================
-   IMAGEM DO PROJETO
-===================== */
 .projeto-img {
-    width: 100%;
     height: 180px;
     overflow: hidden;
     border-radius: 14px;
@@ -449,34 +339,66 @@ header {
     transition: transform 0.4s ease;
 }
 
-/* Zoom suave no hover */
-.projeto-card:hover .projeto-img img {
+.projeto-card:hover img {
     transform: scale(1.08);
 }
 
-
-/* =====================
-   CONTATO
-===================== */
-#contato p {
-    margin-bottom: 30px;
-    font-size: 18px;
+.projeto-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-/* =====================
+.projeto-tags span {
+    font-size: 13px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    background-color: rgba(167, 139, 250, 0.15);
+    color: #a78bfa;
+}
+
+.projeto-links {
+    margin-top: auto;
+    display: flex;
+    gap: 20px;
+}
+
+.projeto-links a {
+    font-weight: 600;
+    color: #a78bfa;
+    text-decoration: none;
+}
+
+.projeto-links a:hover {
+    color: #ffffff;
+}
+
+
+/* 
    FOOTER
-===================== */
+ */
 footer {
     padding: 35px;
     text-align: center;
-    color: #888;
     font-size: 14px;
-    background-color: #0a0a0a;
+    color: #888;
 }
 
-/* =====================
+
+/* 
    RESPONSIVO
-===================== */
+ */
+@media (max-width: 900px) {
+    .sobre-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .sobre-texto {
+        text-align: center;
+    }
+}
+
 @media (max-width: 768px) {
     .nav-menu {
         justify-content: center;
